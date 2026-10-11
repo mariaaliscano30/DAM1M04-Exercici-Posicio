@@ -1,77 +1,81 @@
 body {
-  font-family: inherit, sans-serif;
-  padding-top: 100px;
-  color:#ff3385;
-  margin: 0;
-  background-color: #f6e9f2;
+    font-family: inherit, sans-serif;
+    padding-top: 100px;
+    color:#ff3385;
+    margin: 0;
+    background-color: #f6e9f2;
 }
 
-h1, h2. h3{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
+h1, h2, h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .foto {         
-  border-radius: 15px;    
+    border-radius: 15px;    
 }
 
 .container {
-  margin-top: 40px;
-  max-width: 1100px; 
-  margin: auto;
+    margin-top: 40px;
+    max-width: 1100px; 
+    margin: auto;
 }
 
 /*barra horizontal y links*/
 .navbar {
-  display: flex;
-  align-items: center;
-  background-color: #fffaf3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
+    display: flex;
+    align-items: center;
+    background-color: #fffaf3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
 }
 
 .nav-links {
-  font-weight: 600;
-   display: flex; 
-   gap: 250px; 
-   padding: 30px;
-  justify-content: space-around;
+    font-weight: 600;
+    display: flex; 
+    gap: 250px; 
+    padding: 30px;
+    justify-content: space-around;
 }
 
 .nav-links a {
-  font-family: inherit, sans-serif;
-  text-decoration: none;
-  color: #ff3385;
-  font-size: 20px;
+    font-family: inherit, sans-serif;
+    text-decoration: none;
+    color: #ff3385;
+    font-size: 20px;
 }
 
 .nav-links a:hover {
-  color: #920c46;
+    color: #920c46;
 }
 
 .logo {
-  height: 70px;
-  width: auto;
-  margin-right: 200px; 
+    height: 70px;
+    width: auto;
+    margin-right: 200px; 
+}
+
+.hero {
+    text-align: center;
 }
 
 /*boton, pagina inicio*/
 
 button {
-  display: block;
-  margin: 20px auto; 
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff3385;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff3385;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
 }
 
 /* bloques de informacion, 3 cartas*/
@@ -79,79 +83,85 @@ button {
 
 
 .colecciones {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around;
-  text-align: center;
-  margin: auto;
-  gap: 50px; 
-  margin-top: 50px;
-  align-items: stretch; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    gap: 50px; 
+    margin-top: 50px;
+    align-items: stretch; 
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;    
-  text-align: center;
-  width: calc(25% - 30px);
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    width: calc(25% - 30px);
+    gap: 10px;
 }
-  
- .etiqueta {
-  display: inline-block;
-  flex-direction: column; 
-  align-items: center;
-  width: auto;
-  padding: 20px;
-  background-color: #fcbed391;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
+
+.etiqueta {
+    display: inline-block;
+    flex-direction: column; 
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background-color: #fcbed391;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
+}
+
+.quienes-somos {
+    text-align: center; 
+    margin: 40px;
 }
 
 
 /*barra de filtros, pagina productos*/
 
 .filtro {
- display: flex;
-  justify-content: space-around; 
-  background-color: #fcbed33b;                
-  border-radius: 10px; 
-  padding: 20px;         
+    display: flex;
+    justify-content: space-around; 
+    background-color: #fcbed33b;                
+    border-radius: 10px; 
+    padding: 20px;         
 }
 
 
 .filtro-item {    
-  gap: 15px;                
-  background-color: #fcbed391;
-  border-radius: 10px;  
-  padding: 15px;
+    gap: 15px;                
+    background-color: #fcbed391;
+    border-radius: 10px;  
+    padding: 15px;
 }
 
 .filtro-item:hover {
-        border: solid 2px #fcbed391;
-        color:#920c46;
-        cursor: pointer;
-      }
+    border: solid 2px #fcbed391;
+    color:#920c46;
+    cursor: pointer;
+    }
 
 
 /*pagina productos, con sus precios*/
 
 .productos2{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px;
 }
 
 .tarjeta {
-  flex: 1 1 260px;
-  border-radius: 15px; 
-  background-color: #f6f4e9;
-  box-shadow: 2px 0px 20px 20px rgba(228, 214, 222, 0.466);
-  padding: 30px;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
+    flex: 1 1 260px;
+    border-radius: 15px; 
+    background-color: #f6f4e9;
+    box-shadow: 2px 0px 20px 20px rgba(228, 214, 222, 0.466);
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 /*pagina contacte*/
@@ -160,48 +170,49 @@ button {
     max-width: auto;
 }
 .columnas {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      gap: 20px; 
-      padding-bottom: 50px;                      
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding-bottom: 50px;
+}
 
 
 .cajas{
-  background-color: #fffaf3;
-  padding: 15px;
-  flex-direction: column;
-  margin-bottom: 20px;
-  border-radius: 15px; 
-  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
+    background-color: #fffaf3;
+    padding: 15px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 20px; 
+    box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
 }
 
 
 /*final de la pagina, el copyright, redes sociales y beneficios*/
 
 footer {
-  background-color: #ffd7f0;
-  padding: 20px;
+    background-color: #ffd7f0;
+    padding: 20px;
 }
 
 .beneficios {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f1e99d;
-  box-shadow: -2px -14px 28px 7px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1e99d;
+    box-shadow: -2px -14px 28px 7px rgba(0, 0, 0, 0.07);
 }
 
 
 a {
-  display: flex;
-  font-family: inherit, sans-serif;
-  text-decoration: none;
-  color: #ff3385;
-  font-size: 20px;
+    display: flex;
+    font-family: inherit, sans-serif;
+    text-decoration: none;
+    color: #ff3385;
+    font-size: 20px;
 }
 
 a:hover {
-  color: #920c46;
+    color: #920c46;
 }
 
