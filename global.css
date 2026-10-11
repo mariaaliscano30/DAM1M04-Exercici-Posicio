@@ -1,9 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: inherit, sans-serif;
+  padding-top: 100px;
+  color:#ff3385;
+  background-color: #f6e9f2;
 }
 
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.foto {         
+  border-radius: 15px;      
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*barra horizontal y links*/
 .navbar {
   display: flex;
   align-items: center;
@@ -40,6 +56,23 @@
   margin-right: 200px; 
 }
 
+/*boton, pagina inicio*/
+
+button {
+  display: block;
+  margin: 20px auto; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff3385;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
+}
+
+/*barra de filtros, pagina productos*/
+
 .filtro {
  display: flex;
   justify-content: space-around; 
@@ -47,6 +80,7 @@
   border-radius: 10px; 
   padding: 20px;         
 }
+
 
 .filtro-item {    
   gap: 15px;                
@@ -61,14 +95,11 @@
         cursor: pointer;
       }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-  
+
+/*pagina productos, con sus precios*/
+
 .productos2{
   display: flex;
-  margin: 40px;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -84,75 +115,13 @@
   text-align: center;
 }
 
-.tarjeta :hover{
-  flex: 1 1 260px;
-  border-radius: 5px; 
-  background-color: #f6e9f2;
-  box-shadow: 2px 0px 20px 20px rgba(241, 156, 208, 0.466);
-  padding: 10px;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
 
-.tarjeta span {
-  display: block;        
-  margin-top: 10px;      
-  position: static;      
-}
-
-
-
-body {
-  font-family: inherit, sans-serif;
-  padding-top: 100px;
-  color:#ff3385;
-  background-color: #f6e9f2;
-}
-
-h1 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-  
-.personajes {
-  display: block;
-  margin: 0 auto; 
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 15px; 
-  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
-}
-
-button {
-  display: block;
-  margin: 20px auto; 
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff3385;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.186);
-}
-
-.productes{
-  display: block;
-  margin: 0 auto; 
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px; 
-  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
-}
 
 .productes-grid{
   display: flex;
   flex-direction: column;
   align-items: center;    
   text-align: center;
-  width: calc(25% - 30px);
   gap: 10px;
 }
 
@@ -165,15 +134,6 @@ button {
   gap: 50px; 
   margin-top: 50px;
   align-items: stretch; 
-}
-
-.productos {
-  display: block;
-  margin: 0 auto; 
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px; 
-  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
 }
 
 .card {
@@ -202,26 +162,30 @@ h2 {
   text-align: center;
 }
 
-.about {
-  display: flex;
+
+.columnas {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px; 
+      padding-bottom: 50px;                      
+    }
+
+
+.cajas{
+  background-color: #fffaf3;
+  padding: 15px;
   flex-direction: column;
-  margin-top: 70px;
-}
-.about-container {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
+  border-radius: 15px; 
+  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
 }
 
-.about-text {
-  max-width: 400px;
-  text-align: center;
-  font-family: "inter", sans-serif;
-}
 
-.foto-tienda {         
-  height: auto;
-  border-radius: 15px;      
+/*final de la pagina, el copyright, redes sociales y beneficios*/
+
+footer {
+  background-color: #ffd7f0;
+  padding: 20px;
 }
 
 .beneficios {
@@ -232,23 +196,9 @@ h2 {
   box-shadow: -2px -14px 28px 7px rgba(0, 0, 0, 0.07);
 }
 
-.beneficio-item {
-  display: flex;
-  align-items: center;    
-  gap: 15px;              
-  max-width: 250px;       
-}
 
-
-.social-icons {
-  display: flex;
-  flex-direction: column; 
-  gap: 10px;
-  margin-top: 10px;
-  height: calc(var(--box) * 4 + 40px); 
-  padding: 10px;
-}
 .social-icons a {
+  display: flex;
   font-family: inherit, sans-serif;
   text-decoration: none;
   color: #ff3385;
@@ -257,40 +207,5 @@ h2 {
 
 .social-icons a:hover {
   color: #920c46;
-}
-
-footer {
-  background-color: #ffd7f0;
-  padding: 20px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-
-.columnas {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      gap: 20px; 
-      padding-bottom: 50px;                      
-    }
-
-.item {
-      margin-top: 20px;
-      align-items: center;
-      background: #e6d4de;
-      border-radius: 6px;
-      color: #222;
-      gap: 20px;
-      padding: 30px;
-    }
-
-.cajas{
-  background-color: #fffaf3;
-  padding: 15px;
-  flex-direction: column;
-  margin-bottom: 20px;
-  border-radius: 15px; 
-  box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
 }
 
