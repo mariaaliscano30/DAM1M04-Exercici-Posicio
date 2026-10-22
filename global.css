@@ -187,6 +187,19 @@ button {
     box-shadow: 2px 0px 38px 20px rgba(255, 216, 240, 0.25);
 }
 
+input{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fffaf3;
+    padding: 15px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: #f6e9f2; 
+    
+}
+
 
 /*final de la pagina, el copyright, redes sociales y beneficios*/
 
